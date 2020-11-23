@@ -1,8 +1,35 @@
-<!DOCTYPE html>
-<html>
-<script>
-window.location.href="http://olsoul.writeas.com";
-</script>
-<body>
-</body>
-</html>
+<HTML>
+<BODY>
+<FORM name=loading>
+<P align=center><strong><font color="#0000FF">打开博客中......</font></strong></P>
+<P align=center><FONT face=Arial color=#0066ff size=2>加载中：</FONT> 
+    <INPUT 
+style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bolder; PADDING-BOTTOM: 0px; COLOR: #0066ff; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; FONT-FAMILY: Arial; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: white; BORDER-BOTTOM-STYLE: none" 
+size=46 name=chart> 
+  <BR>
+  <INPUT 
+style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; COLOR: #0066ff; BORDER-BOTTOM: medium none; TEXT-ALIGN: center" 
+size=47 name=percent>
+    <SCRIPT language=javascript> 
+var bar=0 
+var line="→" 
+var amount="" 
+count() 
+function count(){ 
+    bar=bar+3 
+    amount =amount + line 
+    document.loading.chart.value=amount 
+    document.loading.percent.value=bar+"%" 
+    if (bar<65){
+        setTimeout("count()",35);
+    }else{
+ 
+ 
+ 
+                window.location = "http://olsoul.writeas.com";
+    } 
+}
+</SCRIPT>
+</P>
+</BODY>
+</HTML>
